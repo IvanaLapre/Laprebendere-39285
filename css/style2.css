@@ -267,6 +267,25 @@ button:hover{
     }
 }
 
+/* Nosotros */
+.card{
+    text-align: center;
+    background-size: cover;
+    height: 80px;
+    font-size: 25px;
+    padding-top: 50px;
+    color: white;
+    font-style: italic;
+}
+
+@media (max-width:900px){
+    .card{
+    height: 50vh;
+    width: 40vw;
+    font-size: 15px;
+    }
+}
+
 /* Footer */
 
 footer {
