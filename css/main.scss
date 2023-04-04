@@ -1,0 +1,117 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+@import 'header';
+@import 'main';
+
+
+/* Sabores */
+.listaSabores h2{
+    text-align: center;
+    background-size: cover;
+    height: 140px;
+    font-size: 60px;
+    padding-top: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.listaSabores div{
+    text-align: center;
+    font-size: 20px;
+    margin: 30px;
+}
+.promosSabores-contenedor{
+    display: grid;
+    gap: 5px;
+    height: 100vh;
+    text-align: center;
+}
+.promosSabores-contenedor h2{
+    text-align: center;
+    background-size: cover;
+    height: 80px;
+    font-size: 60px;
+    padding-top: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.promosSabores-contenedor div h4 {
+    padding: 10px 20px;
+}
+.promosSabores-contenedor div h4 p{
+    padding: 10px 20px;
+}
+
+.promosSabores-contenedor div img {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+}
+
+.promosSabores-contenedor div img:hover{
+    padding: 30px;
+}
+
+.promosSabores-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    margin: 10px 10px;
+    text-align: center;
+    align-content: center;
+}
+@media (max-width:900px){
+    .promosSabores-items div img{
+        width: 100px;
+        height: 100px;}
+}
+
+/* Locales */
+
+.sectionLocales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width:900px){
+    .sectionLocales iframe{
+    height: 50vh;
+    width: 40vw;
+    }
+}
+
+/* Nosotros */
+.card{
+    text-align: center;
+    background-size: cover;
+    height: 80px;
+    font-size: 25px;
+    padding-top: 50px;
+    color: white;
+    font-style: italic;
+}
+
+@media (max-width:900px){
+    .card{
+    height: 50vh;
+    width: 40vw;
+    font-size: 15px;
+    }
+}

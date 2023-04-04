@@ -1,0 +1,180 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+#header {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  font-size: 20px;
+  background-color: black;
+}
+
+#header .header-item ul li {
+  display: inline-block;
+}
+
+#header .header-item a {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20x;
+  text-decoration: none;
+  text-align: center;
+  min-width: 100px;
+}
+
+@media (max-width: 800px) {
+  #header .header-item ul li:not(.exclusion) {
+    display: none;
+    font-size: 5px;
+  }
+}
+.header-item a:hover {
+  background-color: rgb(253, 253, 253);
+  border-radius: 20px;
+  color: black !important;
+}
+
+button {
+  padding: 10px;
+  background-color: #18b818;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+}
+
+button:hover {
+  padding: 15px;
+}
+
+/* Main */
+.mainInicio h1 {
+  text-align: center;
+  font-weight: bold;
+  background-image: url(../img/Amasando-masa.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  font-size: 130px;
+  padding-top: 350px;
+  color: black;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 800px) {
+  .mainInicio h1 {
+    font-size: 3rem;
+    background-size: cover;
+    height: 400px;
+    padding-top: 150px;
+  }
+}
+.mainInicio h4 {
+  text-align: center;
+  font-size: 60px;
+  margin: 60px;
+  color: white;
+  letter-spacing: 0.1em;
+  background-color: black;
+}
+
+.mainSabores h1 {
+  text-align: center;
+  background-image: url(../img/Varias\ empanadas.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  font-size: 130px;
+  padding-top: 350px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 800px) {
+  .mainSabores h1 {
+    font-size: 3rem;
+    background-size: cover;
+    height: 400px;
+    padding-top: 150px;
+  }
+}
+.mainContacto h1 {
+  text-align: center;
+  background-image: url(../img/Varias\ empanadas.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  font-size: 130px;
+  padding-top: 350px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .mainContacto h1 {
+    font-size: 3rem;
+    background-size: cover;
+    height: 400px;
+    padding-top: 150px;
+  }
+}
+.mainLocales h1 {
+  text-align: center;
+  background-image: url(../img/empanada-carbonara.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  font-size: 130px;
+  padding-top: 350px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .mainLocales h1 {
+    font-size: 3rem;
+    background-size: cover;
+    height: 400px;
+    padding-top: 150px;
+  }
+}
+.mainNosotros h1 {
+  text-align: center;
+  background-image: url(../img/Empanada-jyq.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  font-size: 130px;
+  padding-top: 350px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .mainNosotros h1 {
+    font-size: 3rem;
+    background-size: cover;
+    height: 400px;
+    padding-top: 150px;
+  }
+}/*# sourceMappingURL=main.css.map */
