@@ -1,3 +1,15 @@
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        margin-left: 100%;
+        width: 300%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
 /* Main */
 
 .mainInicio h1{
@@ -13,24 +25,6 @@
     letter-spacing: 0.1em;
     animation: 2s;
     animation-name: aparecer;
-}
-
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@media (max-width:800px) {
-    .mainInicio h1{
-        font-size: 3rem;
-        background-size: cover;
-        height: 400px;
-        padding-top: 150px;
-    }
 }
 
 .mainInicio h4{
@@ -57,23 +51,6 @@
     animation-name: aparecer;
 }
 
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@media (max-width:800px) {
-    .mainSabores h1{
-        font-size: 3rem;
-        background-size: cover;
-        height: 400px;
-        padding-top: 150px;
-    }
-}
 
 .mainContacto h1{
     text-align: center;
@@ -89,24 +66,6 @@
     font-weight: bold;
     animation: 2s;
     animation-name: aparecer;
-}
-
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@media (max-width:800px) {
-    .mainContacto h1{
-        font-size: 3rem;
-        background-size: cover;
-        height: 400px;
-        padding-top: 150px;
-    }
 }
 
 .mainLocales h1{
@@ -125,23 +84,6 @@
     animation-name: aparecer;
 }
 
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@media (max-width:800px) {
-    .mainLocales h1{
-        font-size: 3rem;
-        background-size: cover;
-        height: 400px;
-        padding-top: 150px;
-    }
-}
 
 .mainNosotros h1{
     text-align: center;
@@ -159,20 +101,3 @@
     animation-name: aparecer;
 }
 
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@media (max-width:800px) {
-    .mainNosotros h1{
-        font-size: 3rem;
-        background-size: cover;
-        height: 400px;
-        padding-top: 150px;
-    }
-}

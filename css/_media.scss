@@ -1,0 +1,55 @@
+/* HEADER */
+@media (max-width:800px) {
+    #header .header-item ul li:not(.exclusion) {
+        display: none;
+        font-size: 5px;
+    }
+}
+
+/* MAINS */
+@media (max-width:800px) {
+    .mainInicio h1{
+        font-size: 3rem;
+        background-size: cover;
+        height: 400px;
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:800px) {
+    .mainSabores h1{
+        font-size: 3rem;
+        background-size: cover;
+        height: 400px;
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:800px) {
+    .mainContacto h1{
+        font-size: 3rem;
+        background-size: cover;
+        height: 400px;
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:800px) {
+    .mainLocales h1{
+        font-size: 3rem;
+        background-size: cover;
+        height: 400px;
+        padding-top: 150px;
+    }
+}
+
+
+@media (max-width:800px) {
+    .mainNosotros h1{
+        font-size: 3rem;
+        background-size: cover;
+        height: 400px;
+        padding-top: 150px;
+    }
+}
+

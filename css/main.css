@@ -21,12 +21,10 @@ a {
   font-size: 20px;
   background-color: black;
 }
-
-#header .header-item ul li {
+#header nav ul li {
   display: inline-block;
 }
-
-#header .header-item a {
+#header nav ul li a {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 20x;
@@ -34,20 +32,7 @@ a {
   text-align: center;
   min-width: 100px;
 }
-
-@media (max-width: 800px) {
-  #header .header-item ul li:not(.exclusion) {
-    display: none;
-    font-size: 5px;
-  }
-}
-.header-item a:hover {
-  background-color: rgb(253, 253, 253);
-  border-radius: 20px;
-  color: black !important;
-}
-
-button {
+#header nav ul li a button {
   padding: 10px;
   background-color: #18b818;
   cursor: pointer;
@@ -56,10 +41,28 @@ button {
   font-size: 15px;
 }
 
+.header-item a:hover {
+  background-color: rgb(253, 253, 253);
+  border-radius: 20px;
+  color: black !important;
+}
+
 button:hover {
   padding: 15px;
 }
 
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    margin-left: 100%;
+    width: 300%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 /* Main */
 .mainInicio h1 {
   text-align: center;
@@ -72,16 +75,10 @@ button:hover {
   padding-top: 350px;
   color: black;
   letter-spacing: 0.1em;
+  animation: 2s;
+  animation-name: aparecer;
 }
 
-@media (max-width: 800px) {
-  .mainInicio h1 {
-    font-size: 3rem;
-    background-size: cover;
-    height: 400px;
-    padding-top: 150px;
-  }
-}
 .mainInicio h4 {
   text-align: center;
   font-size: 60px;
@@ -102,16 +99,10 @@ button:hover {
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   letter-spacing: 0.1em;
+  animation: 2s;
+  animation-name: aparecer;
 }
 
-@media (max-width: 800px) {
-  .mainSabores h1 {
-    font-size: 3rem;
-    background-size: cover;
-    height: 400px;
-    padding-top: 150px;
-  }
-}
 .mainContacto h1 {
   text-align: center;
   background-image: url(../img/Varias\ empanadas.jpeg);
@@ -124,16 +115,10 @@ button:hover {
   color: white;
   letter-spacing: 0.1em;
   font-weight: bold;
+  animation: 2s;
+  animation-name: aparecer;
 }
 
-@media (max-width: 800px) {
-  .mainContacto h1 {
-    font-size: 3rem;
-    background-size: cover;
-    height: 400px;
-    padding-top: 150px;
-  }
-}
 .mainLocales h1 {
   text-align: center;
   background-image: url(../img/empanada-carbonara.jpeg);
@@ -146,16 +131,10 @@ button:hover {
   color: white;
   letter-spacing: 0.1em;
   font-weight: bold;
+  animation: 2s;
+  animation-name: aparecer;
 }
 
-@media (max-width: 800px) {
-  .mainLocales h1 {
-    font-size: 3rem;
-    background-size: cover;
-    height: 400px;
-    padding-top: 150px;
-  }
-}
 .mainNosotros h1 {
   text-align: center;
   background-image: url(../img/Empanada-jyq.webp);
@@ -168,13 +147,167 @@ button:hover {
   color: white;
   letter-spacing: 0.1em;
   font-weight: bold;
+  animation: 2s;
+  animation-name: aparecer;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-color: black;
+}
+
+/* HEADER */
+@media (max-width: 800px) {
+  #header .header-item ul li:not(.exclusion) {
+    display: none;
+    font-size: 5px;
+  }
+}
+/* MAINS */
+@media (max-width: 800px) {
+  .mainInicio h1 {
+    font-size: 3rem;
+    background-size: cover;
+    height: 400px;
+    padding-top: 150px;
+  }
+}
+@media (max-width: 800px) {
+  .mainSabores h1 {
+    font-size: 3rem;
+    background-size: cover;
+    height: 400px;
+    padding-top: 150px;
+  }
+}
+@media (max-width: 800px) {
+  .mainContacto h1 {
+    font-size: 3rem;
+    background-size: cover;
+    height: 400px;
+    padding-top: 150px;
+  }
+}
+@media (max-width: 800px) {
+  .mainLocales h1 {
+    font-size: 3rem;
+    background-size: cover;
+    height: 400px;
+    padding-top: 150px;
+  }
+}
 @media (max-width: 800px) {
   .mainNosotros h1 {
     font-size: 3rem;
     background-size: cover;
     height: 400px;
     padding-top: 150px;
+  }
+}
+/* Sabores */
+.listaSabores h2 {
+  text-align: center;
+  background-size: cover;
+  height: 140px;
+  font-size: 60px;
+  padding-top: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+.listaSabores div {
+  text-align: center;
+  font-size: 20px;
+  margin: 30px;
+}
+
+.promosSabores-contenedor {
+  display: grid;
+  gap: 5px;
+  height: 100vh;
+  text-align: center;
+}
+
+.promosSabores-contenedor h2 {
+  text-align: center;
+  background-size: cover;
+  height: 80px;
+  font-size: 60px;
+  padding-top: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+.promosSabores-contenedor div h4 {
+  padding: 10px 20px;
+}
+
+.promosSabores-contenedor div h4 p {
+  padding: 10px 20px;
+}
+
+.promosSabores-contenedor div img {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 5px;
+}
+
+.promosSabores-contenedor div img:hover {
+  padding: 30px;
+}
+
+.promosSabores-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  margin: 10px 10px;
+  text-align: center;
+  align-content: center;
+}
+
+@media (max-width: 900px) {
+  .promosSabores-items div img {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* Locales */
+.sectionLocales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .sectionLocales iframe {
+    height: 50vh;
+    width: 40vw;
+  }
+}
+/* Nosotros */
+.card {
+  text-align: center;
+  background-size: cover;
+  height: 80px;
+  font-size: 25px;
+  padding-top: 50px;
+  color: white;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .card {
+    height: 50vh;
+    width: 40vw;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
