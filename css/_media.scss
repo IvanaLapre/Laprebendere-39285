@@ -1,7 +1,12 @@
 /* HEADER */
-@media (max-width:800px) {
-    #header .header-item ul li:not(.exclusion) {
-        display: none;
+@media (max-width:915px) {
+    #header .header-item ul li {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:700px) {
+    #header .header-item ul li {
         font-size: 5px;
     }
 }

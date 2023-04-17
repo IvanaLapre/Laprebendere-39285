@@ -82,7 +82,7 @@ button:hover {
 .mainInicio h4 {
   text-align: center;
   font-size: 60px;
-  margin: 60px;
+  margin: 20px;
   color: white;
   letter-spacing: 0.1em;
   background-color: black;
@@ -162,9 +162,13 @@ footer {
 }
 
 /* HEADER */
-@media (max-width: 800px) {
-  #header .header-item ul li:not(.exclusion) {
-    display: none;
+@media (max-width: 915px) {
+  #header .header-item ul li {
+    font-size: 10px;
+  }
+}
+@media (max-width: 700px) {
+  #header .header-item ul li {
     font-size: 5px;
   }
 }
